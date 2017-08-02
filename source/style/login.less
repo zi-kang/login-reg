@@ -1,0 +1,129 @@
+
+.login-modal {
+  padding: 20px 36px 60px;
+  display: inline-block;
+  width: 440px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 1px #eee;
+  -moz-box-shadow: 0 0 1px #eee;
+  box-shadow: 0 0 1px #eee;
+  h4 {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 300;
+    border-bottom: 1px solid #eee;
+    line-height: 80px;
+  }
+  .child-modal {
+    padding: 0 10px;
+    position: relative;
+  }
+  .tip {
+    position: absolute;
+    top:-38px;
+    left: 10px;
+    height: 30px;
+    width: 94%;
+    line-height: 30px;
+    background: #f5f5f5;
+    font-size: 14px;
+    &.error {
+      color: #d82d41;
+    }
+    &.success {
+      color: #50bd6b
+    }
+  }
+  .icon {
+    position: relative;
+    top:4px;
+    margin-right:10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    &.error {
+      background: url("../img/fail.png?__sprite") no-repeat;
+    }
+    &.success {
+      background: url("../img/success.png?__sprite") no-repeat;
+    }
+  }
+  input {
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#999;
+    line-height: 45px;
+    width: 100%;
+    text-indent: 20px;
+    &::-webkit-input-placeholder{
+      color:#999;
+    }
+    &::-ms-input-placeholder{
+      color:#999;
+    }
+    &::-moz-input-placeholder{
+      color:#999;
+    }
+    &:first-of-type{
+      margin:45px 0 24px;
+    }
+    &:last-of-type{
+      margin-bottom: 24px;
+    }
+    &:focus{
+      border-color: #f39800;
+    }
+  }
+  button {
+    margin-bottom:10px;
+    display: block;
+    width: 100%;
+    background: #f39800;
+    color: #fff;
+    line-height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .valid-cap{
+    font-size: 0;
+    border:1px solid #eee;
+    margin-bottom:24px;
+    input{
+      float: left;
+      display: inline-block;
+      border: none;
+      width: 220px;
+      margin:0;
+    }
+    img{
+      float: right;
+      height: 41px;
+      margin: 2px 0;
+      cursor: pointer;
+    }
+  }
+  .other{
+    &:after{
+      display: block;
+      content: '';
+      clear: both;
+    }
+    text-align: right;
+    a{
+      color: #999;
+      &:hover{
+        color: #f39800;
+      }
+    }
+    a:first-of-type{
+      float: left;
+    }
+    a:last-of-type{
+      float: right;
+    }
+  }
+}

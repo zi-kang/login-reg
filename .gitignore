@@ -1,0 +1,7 @@
+/node_modules/
+/pack-release/
+/dist/
+/.idea/
+.DS_Store
+*.zip
+*.rar

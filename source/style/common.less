@@ -1,0 +1,157 @@
+@themeOrange:#f39800;
+
+@charset "utf-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  min-width: 980px;
+  background:#f5f5f5;
+}
+
+/*默认样式去除*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:active {
+  color: #000;
+}
+
+ul, li, p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+button,
+input,
+keygen,
+select,
+textarea {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding:0;
+  border-width:0;
+  outline:none;
+}
+button:hover{
+  cursor: pointer;
+}
+html {
+  box-sizing: border-box;
+  min-height:100%;
+}
+html,body{
+  height: 100%;
+}
+table{
+  border-collapse:collapse;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing:inherit;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color:transparent;
+}
+.container{
+  padding:200px 0 400px;
+  min-width: 1200px;
+  background: url("../img/sightp-bg.png");
+}
+.w1190{
+  margin: 0 auto;
+  width: 1190px;
+}
+.pr{
+  position: relative;
+}
+.clearfix{
+  &:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+.valid-code{
+  position: relative;
+
+  .slider_hint{
+    line-height: 45px;
+  }
+  .slider_main{
+    position: absolute;
+    top:48px;
+    left:0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+  }
+  .icon-refresh{
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    cursor: pointer;
+    background: url("../img/refresh.png?__sprite") no-repeat;
+  }
+  .mask-box{
+    padding: 0 18px;
+  }
+  .mask-module{
+    position: relative;
+    #maskCode{
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+  .tipSuccess{
+    color: #50bd6b;
+  }
+  .tipFailed{
+    color: red;
+  }
+  .tiphint{
+    color: #999;
+  }
+}
+.slider_hint{
+  text-align: left;
+  text-indent: 20px;
+}
+.icon-valid{
+  position: relative;
+  top:8px;
+  margin-right:20px;
+  display: inline-block;
+  width: 22px;
+  height: 26px;
+  background: url("../img/icon-valid.png?__sprite") no-repeat;
+}
+.iconValidSuccess{
+  position: relative;
+  top:8px;
+  margin-right:20px;
+  display: inline-block;
+  width: 22px;
+  height: 26px;
+  background: url("../img/icon-valid-success.png?__sprite") no-repeat !important;
+}

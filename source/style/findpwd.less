@@ -1,0 +1,130 @@
+.findPwd-modal{
+  @borderColor:#eee;
+  @fontColor:#999;
+  @themeColor:#f39800;
+
+  display: inline-block;
+  background: #fff;
+  min-width: 420px;
+  color:@fontColor;
+  padding: 30px 45px 60px;
+
+  input {
+    font-size: 14px;
+    color: @fontColor;
+    line-height:43px;
+    text-indent: 10px;
+    border-radius: 5px;
+    &::placeholder {
+      color: @fontColor;
+    }
+  }
+  h4{
+    margin-bottom:38px;
+    font-size: 18px;
+    color:#999;
+    line-height: 58px;
+    border-bottom: 1px solid @borderColor;
+  }
+  .wrap-text{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border:1px solid @borderColor;
+    border-radius: 5px;
+    text-align: left;
+    &.isEditing{
+      border:1px solid @themeColor;
+    }
+    &:not(:last-of-type){
+      margin-bottom:24px;
+    }
+    &:last-of-type{
+      margin-bottom:40px;
+    }
+    >span{
+      display: inline-block;
+      min-width: 50px;
+      padding: 5px 0;
+      text-align: center;
+      border-right: 1px solid @borderColor;
+    }
+    button{
+      width: 115px;
+      padding: 4px 4px;
+      color:@themeColor;
+      font-size: 14px;
+      border-left:1px solid @borderColor;
+      background: transparent;
+    }
+  }
+  .isError{
+    border:1px solid red!important;
+  }
+  .tip{
+    position: absolute;
+    color: red;
+    line-height: 25px;
+  }
+
+  #code{
+    width: 220px;
+  }
+  .next{
+    display: block;
+    width: 100%;
+    background: @themeColor;
+    color:#fff;
+    line-height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .f_success,
+  .f_modify{
+    width: 330px;
+    input{
+      width: 100%;
+    }
+    .sightp_tip{
+      margin: 40px auto 0;
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+    .m_pwd{
+      width: 100%;
+      padding: 4px 4px;
+      color:#fff;
+      font-size: 18px;
+      line-height: 45px;
+      border-radius: 5px;
+      background: @themeColor;
+    }
+    .b_success{
+      background: url("../img/b_success.png") no-repeat;
+      background-size: contain;
+    }
+    .b_failed{
+      background: url("../img/b_failed.png") no-repeat;
+      background-size: contain;
+    }
+    >p{
+      margin:30px 0 50px;
+      text-align: center;
+      font-size:18px;
+      color: #333;
+    }
+    a{
+      display: block;
+      width: 100%;
+      background: @themeColor;
+      color:#fff;
+      font-size:18px;
+      line-height: 45px;
+      margin-bottom:15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.register-modal{
+  @titleColor:#333;
+  @fontColor:#999;
+  @borderColor:#ddd;
+  @themeColor:#f39800;
+  min-width: 300px;
+  display: inline-block;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px #eee;
+  background: #fff;
+  padding: 30px 55px 60px;
+  color: @fontColor;
+  input{
+    font-size: 14px;
+    color: @fontColor;
+    &::placeholder{
+      color:@fontColor;
+    }
+  }
+  .border.isEditing{
+    border: 1px solid @themeColor;
+  }
+  .isError{
+    border:1px solid red !important;
+  }
+  .re-child{
+    width: 390px;
+    padding: 0 20px;
+  }
+  h4{
+    font-size: 18px;
+    color: @titleColor;
+    border-bottom: 1px solid @borderColor;
+    line-height: 58px;
+  }
+  .border{
+    position: relative;
+    border: 1px solid @borderColor;
+    border-radius: 5px;
+  }
+  .user{
+    margin-bottom:24px;
+  }
+  .tip{
+    position: absolute;
+    left:0;
+    color: red;
+    line-height: 24px;
+  }
+  .re-type{
+    padding: 20px 0;
+    span:first-of-type{
+      margin-right:40px;
+    }
+      i{
+        cursor: pointer;
+        position: relative;
+        top:3px;
+        margin-right:5px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("../img/select.png?__sprite") no-repeat;
+        &.selected{
+          background: url("../img/selected.png?__sprite") no-repeat;
+        }
+      }
+  }
+
+  .border>input{
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-indent: 20px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+  }
+  .mobile,
+  .valid,
+  .code{
+    margin-bottom:24px;
+  }
+  .mobile{
+    border: 1px solid @borderColor;
+    text-align: left;
+    border-radius: 5px;
+    span{
+      margin: 9px;
+      padding:5px 10px;
+      display: inline-block;
+      border-right:1px solid @borderColor;
+    }
+    input{
+      display: inline-block!important;
+      width: 250px;
+    }
+  }
+  .code{
+    text-align: left;
+    input{
+      display: inline-block!important;
+      width: 220px;
+    }
+    button{
+      width: 115px;
+      padding: 4px 4px;
+      color:@themeColor;
+      font-size: 14px;
+      border-left:1px solid @borderColor;
+      background: transparent;
+    }
+  }
+  .protocol{
+    position: relative;
+    text-align: left;
+    .tip{
+      top:-20px;
+    }
+    a{
+      color: @themeColor;
+    }
+  }
+  .icon-agree{
+    cursor: pointer;
+    position: relative;
+    top:2px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/agree.png?__sprite") no-repeat;
+    &.agreed{
+      background: url("../img/agreed.png?__sprite") no-repeat;
+    }
+  }
+  .register{
+    margin: 10px 0;
+    width: 100%;
+    height: 45px;
+    border: 1px solid @borderColor;
+    border-radius: 5px;
+    color: #fff;
+    background: @themeColor;
+    font-size: 16px;
+  }
+  .others{
+    text-align: right;
+    a{
+      color: @themeColor;
+    }
+  }
+
+
+
+  //注册成功
+  .r_success,
+  .r_failed{
+    width: 330px;
+    .sightp_tip{
+      margin: 40px auto 0;
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+    .b_success{
+      background: url("../img/b_success.png") no-repeat;
+      background-size: contain;
+    }
+    .b_failed{
+      background: url("../img/b_failed.png") no-repeat;
+      background-size: contain;
+    }
+    p{
+      margin:30px 0 50px;
+      text-align: center;
+      font-size:18px;
+      color: #333;
+    }
+    a{
+      display: block;
+      width: 100%;
+      background: @themeColor;
+      color:#fff;
+      font-size:18px;
+      line-height: 45px;
+      margin-bottom:15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+  }
+}
