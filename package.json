@@ -10,7 +10,7 @@
     "clean": "rm -rf ./pack-release && rm -rf ./build"
   },
   "keywords": [],
-  "author": "PyHuang",
+  "author": "huzikang",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
